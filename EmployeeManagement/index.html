@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel= "stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div id="root">
+        <div class="left">
+            <form id="form">
+                <input type="text" name="name" placeholder="Employee Name" required>
+                <input type="number" name="employeeId" placeholder="Employee Id" required >
+                <input type="number" name="salary" placeholder="salary" required>
+                <input type="text" name="team" placeholder="Team" required>
+                <select name="role" required>
+                    <option value="SDE">SDE</option>
+                    <option value="QA">Quality Assurance</option>
+                    <option value="PM">Product Manager</option>
+                </select>
+                <input type="text" name="companyName" placeholder="Company Name" required>
+                <button>Create Employee</button>
+            </form>
+        </div>
+        <div class="right">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Employee Id</th>
+                        <th>Name</th>
+                        <th>Salary</th>
+                        <th>Role</th>
+                        <th>Team</th>
+                        <th>Company Name</th>
+                        <th>Options</th>
+
+                    </tr>
+                </thead>
+                <tbody id="records-container">
+                    <!-- <tr>
+                        <td>123</td>
+                        <td>Tej</td>
+                        <td>10,000</td>
+                        <td>SDE</td>
+                        <td>FrontEnd</td>
+                        <td>Accio</td>
+                        <td>
+                            <span class="material-icons">edit</span>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
